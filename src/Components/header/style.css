@@ -1,0 +1,257 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.header__wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__links-list-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header__links-list {
+  height: 94px;
+  display: flex;
+  align-items: center;
+}
+
+.header__links {
+  color: #6c6c6c;
+  padding: 39.3px 0;
+  transition: 0.2s;
+  font-family: Josefin Sans;
+  font-weight: 700;
+  font-size: 14px;
+  color: #252525;
+  position: relative;
+  z-index: 999;
+}
+
+.header__link-home-bc {
+  color: #09c6ab;
+}
+
+.header__links:hover {
+  color: #09c6ab;
+}
+
+.header__links-hidden-wrapper {
+  max-width: 220px;
+  width: 100%;
+  max-height: 0px;
+  position: absolute;
+  background-color: #252525;
+  top: 95px;
+  padding: 0 24px;
+  transition: 0.5s;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.header__links:hover + .header__links-hidden-wrapper {
+  max-height: 310px;
+  visibility: visible;
+}
+
+.header__links-hidden-wrapper:hover {
+  max-height: 310px;
+  visibility: visible;
+}
+
+.header__links-hidden-shop-wrapper {
+  max-width: 550px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: #ffffff;
+}
+
+.header__link-shop {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__link-hidden-shop {
+  font-family: Josefin Sans;
+  font-weight: 400;
+  font-size: 12px;
+  color: #ffffff;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #929292;
+  font-style: italic;
+}
+
+.header__link-hidden-shop:hover {
+  color: #09c6ab;
+}
+
+.header__link-shop-title {
+  margin: 10px 0;
+  font-family: Josefin Sans;
+  font-weight: 400;
+  font-size: 12px;
+  color: #ffffff;
+}
+
+.header__link-hidden {
+  font-family: Josefin Sans;
+  font-weight: 400;
+  font-size: 12px;
+  color: #ffffff;
+  text-transform: uppercase;
+  line-height: 32px;
+  display: block;
+  transition: 0.2s;
+}
+
+.header__link-hidden:hover {
+  color: #09c6ab;
+}
+
+.header__line {
+  width: 1px;
+  height: 93px;
+  background-color: #ebebeb;
+}
+
+.header__shops {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.header__search-link {
+  position: relative;
+}
+
+.header__search-hidden-wrapper {
+  position: absolute;
+  top: 60px;
+  left: -250px;
+  height: 0;
+}
+
+.header__search-home {
+  transition: 0.3s;
+  height: 45.5px;
+  height: 0;
+  opacity: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.header__search-hidden-input {
+  width: 250px;
+  background-color: #252525;
+  height: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-family: Josefin Sans;
+  font-weight: 400;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.header__search-hidden-input::-moz-placeholder {
+  color: #ffffff;
+}
+
+.header__search-hidden-input::placeholder {
+  color: #ffffff;
+}
+
+.header__search-hidden-button {
+  position: absolute;
+  right: 0;
+  padding: 0 19px;
+  height: 100%;
+  font-size: 19px;
+  border: none;
+  background-color: #09c6ab;
+  color: #ffffff;
+}
+
+.header__bars-link {
+  position: relative;
+  color: #fff;
+}
+
+#header__bars-btn {
+  border: none;
+  background-color: transparent;
+}
+
+.header__bars-link-wrapper {
+  position: absolute;
+  background-color: #252525;
+  height: 0;
+  padding: 0 20px;
+  left: -180px;
+  top: 70px;
+  transition: 0.7s;
+  visibility: hidden;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.header__bars-link-wrapper a {
+  font-family: Josefin Sans;
+  font-weight: 400;
+  font-size: 12px;
+  color: #aaa;
+  line-height: 30px;
+  display: block;
+  transition: 0.3s;
+}
+.header__bars-link-wrapper a:hover {
+  color: #09c6ab;
+}
+
+.header__bars-title {
+  padding: 5px 0;
+  font-family: Josefin Sans;
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+}
+
+.bars__line {
+  width: 100%;
+  height: 0.5px;
+  background-color: #bebebe;
+  margin: 15px 0;
+}
