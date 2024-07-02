@@ -43,7 +43,7 @@ li {
 .header__links {
   color: #6c6c6c;
   padding: 39.3px 0;
-  transition: 0.2s;
+  transition: 0.5s linear ease;
   font-family: Josefin Sans;
   font-weight: 700;
   font-size: 14px;
@@ -153,6 +153,7 @@ li {
 
 .header__search-link {
   position: relative;
+  cursor: pointer;
 }
 
 .header__search-hidden-wrapper {
@@ -211,6 +212,7 @@ li {
 #header__bars-btn {
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .header__bars-link-wrapper {

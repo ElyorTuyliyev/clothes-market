@@ -4,6 +4,7 @@ import Icon__search from "../images/icon-search.png";
 import Icon__bars from "../images/icon-bars.png";
 import Icon__shop from "../images/icon-shop.png";
 import List from "./Components/list";
+import "./script";
 
 function Header() {
   const home = [
@@ -122,12 +123,12 @@ function Header() {
                 </a>
                 <div class="header__links-hidden-wrapper header__links-hidden-shop-wrapper">
                   <div class="header__link-shop">
-                    {shop.map((item) => (
+                    {shop?.map((item) => (
                       <List title={item.title} />
                     ))}
                   </div>
                   <div class="header__link-shop">
-                    {shop.map((item) => (
+                    {shop?.map((item) => (
                       <List title={item.title} />
                     ))}
                   </div>
