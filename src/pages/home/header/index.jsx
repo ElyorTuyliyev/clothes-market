@@ -92,6 +92,7 @@ function Header() {
       title: "SHOP LAYOUTES ",
     },
   ];
+
   return (
     <header class="header">
       <nav class="nav">

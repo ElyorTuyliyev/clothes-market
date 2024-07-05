@@ -1,0 +1,30 @@
+.shop__box-small {
+  position: relative;
+}
+
+.shop__box-small:hover .smallCard__text-wrapper {
+  transform: translateX(20px);
+}
+
+.smallCard__text-wrapper {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-family: Josefin Sans;
+  transition: 0.5s;
+}
+
+.smallCard__title {
+  border-bottom: 2px solid#787878;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 0 0 8px 0;
+}
+
+.smallCard__text {
+  font-size: 16px;
+  font-weight: 600;
+  font-style: italic;
+  margin: 10px 0;
+}
